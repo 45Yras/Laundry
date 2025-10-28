@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Loundry | Beranda</title>
+    <link rel="stylesheet" href="index-laundry.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🧺 Sistem Informasi Laundry Modern</h1>
+            <p>Kelola pesanan laundry Anda dengan mudah dan efisien</p>
+        </div>
+    </header>
+
+    <nav>
+    <div class="container">
+        <ul>
+            <li><a href="#informasi-umum" class="active">Beranda</a></li>
+            <li><a href="#input-pesanan">Input Pesanan</a></li>
+            <li><a href="#daftar-harga">Daftar Harga</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container">
+        <main>
+            <section id="informasi-umum" class="card">
+                <h2>Selamat Datang di Sistem Laundry!</h2>
+                <p>Sistem ini dirancang untuk mempermudah pencatatan data pelanggan.</p>
+            </section>
+            
+            <hr>
+
+            <section id="input-pesanan" class="card">
+                <h2>📝 Formulir Input Pesanan Baru</h2>
+                
+                <form id="formPesanan" onsubmit="kirimKeWhatsApp(event)">
+                    
+                    <div class="form-group">
+                        <label for="nama_pelanggan">Nama Pelanggan:</label>
+                        <input type="text" id="nama_pelanggan" name="nama_pelanggan" required placeholder="Masukkan nama anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomor_wa">Nomor WhatsApp Pelanggan:</label>
+                        <input type="text" id="nomor_wa" name="nomor_wa" required placeholder="Masukkan nomor WA anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jenis_layanan">Jenis Layanan:</label>
+                        <select id="jenis_layanan" name="jenis_layanan" required>
+                            <option value="">-- Pilih Layanan --</option>
+                            <option value="Cuci Kering Lipat">Cuci Kering Lipat</option>
+                            <option value="Cuci Setrika">Cuci Setrika</option>
+                            <option value="Setrika Saja">Setrika Saja</option>
+                            <option value="Express">Express (3 Jam)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="berat">Berat (kg):</label>
+                        <input type="number" id="berat" name="berat" min="1" step="0.1" required placeholder="Minimal 1 kg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal_masuk">Tanggal Masuk:</label>
+                        <input type="date" id="tanggal_masuk" name="tanggal_masuk" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Simpan</button>
+                    </div>
+
+                </form>
+            </section>
+
+        <script src="index-laundry.js"></script>
+
+</body>
+</html>
+            
+            <hr>
+
+            <section id="daftar-harga" class="card">
+                <h2>💰 Daftar Harga Layanan</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Layanan</th>
+                            <th>Harga per Kg</th>
+                            <th>Estimasi Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cuci Kering Lipat</td>
+                            <td>Rp 7.000</td>
+                            <td>2 Hari</td>
+                        </tr>
+                        <tr>
+                            <td>Cuci Setrika</td>
+                            <td>Rp 10.000</td>
+                            <td>2 Hari</td>
+                        </tr>
+                        <tr>
+                            <td>Setrika Saja</td>
+                            <td>Rp 5.000</td>
+                            <td>1 Hari</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Express</td>
+                            <td>Rp 15.000</td>
+                            <td>**3 Jam**</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+             <p>&copy; 2025 Sistem Informasi Laundry.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

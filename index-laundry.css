@@ -1,0 +1,178 @@
+/* GLOBAL RESET & FONT */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f5; /* Warna latar belakang terang */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Batasan lebar agar tidak terlalu lebar di layar besar */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+/* HEADER & NAVIGASI */
+header {
+    background-color: #4a90e2; /* Biru cerah, warna khas loundry/bisnis */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.2em;
+}
+
+nav {
+    background-color: #357bd8; /* Biru sedikit lebih gelap dari header */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Gunakan inline-block untuk kontrol margin/padding */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #2b6cb8; /* Efek hover yang bagus */
+}
+
+/* KONTEN UTAMA & CARD */
+main {
+    padding: 20px 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Efek bayangan elegan */
+}
+
+.card h2 {
+    color: #4a90e2;
+    border-bottom: 3px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 30px 0;
+}
+
+/* FORMULIR */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+.form-group button {
+    background-color: #5cb85c; /* Hijau cerah untuk tombol aksi utama */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #4cae4c;
+}
+
+/* TABEL DATA HARGA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table thead th {
+    background-color: #f7f7f7;
+    color: #4a90e2;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Garis zebra */
+}
+
+table tr:hover {
+    background-color: #f0f8ff; /* Efek hover pada baris */
+}
+
+.highlight {
+    background-color: #fffacd !important; /* Warna kuning muda untuk highlight */
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
